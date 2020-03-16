@@ -6,4 +6,4 @@ Ext.define('TestApp.view.main.MainViewController', {
     this.lookupReference('df').setValue(Date.now())
   }
 
-})
+});

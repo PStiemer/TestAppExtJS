@@ -1,9 +1,14 @@
 Ext.define('TestApp.view.main.MainViewModel', {
   extend: 'Ext.app.ViewModel',
   alias: 'viewmodel.mainviewmodel',
-  data: {
-    clickTime : Date.now()
-  },
+  requires: [
+    'TestApp.model.Tune'
+  ],
   stores: {
+    tunes: {
+      model: 'TestApp.model.Tune',
+      autoLoad: true,
+      sorters: ['artist', 'title']
+    }
   }
-})
+});
