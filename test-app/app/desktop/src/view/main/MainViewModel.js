@@ -8,6 +8,7 @@ Ext.define('TestApp.view.main.MainViewModel', {
     tunes: {
       model: 'TestApp.model.Tune',
       autoLoad: true,
+      //Sort by artist and then by title.
       sorters: ['artist', 'title']
     }
   }

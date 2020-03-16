@@ -1,10 +1,8 @@
 .tunes-view {
   background-color: #eeeeee;
   -webkit-transition: -webkit-filter 250ms;
-  transition: -webkit-filter 250ms;
   -o-transition: filter 250ms;
   -moz-transition: filter 250ms;
-  transition: filter 250ms;
   transition: filter 250ms, -webkit-filter 250ms;
 }
 
@@ -12,7 +10,7 @@
   -webkit-filter: blur(5px) grayscale(80%);
   filter: blur(5px) grayscale(80%);
 }
-
+// Behaviour when hovering over a thumbnail
 .video:hover {
   -webkit-transform: scale(1.10);
   -moz-transform: scale(1.10);
@@ -28,13 +26,10 @@
 
 .video {
   -webkit-transition: transform 500ms ease;
-  -moz-transition: transform 200ms ease;
   -o-transition: transform 200ms ease;
   -webkit-transition: -webkit-transform 200ms ease;
-  transition: -webkit-transform 200ms ease;
   -o-transition: -o-transform 200ms ease;
   -moz-transition: transform 200ms ease, -moz-transform 200ms ease;
-  transition: transform 200ms ease;
   transition: transform 200ms ease, -webkit-transform 200ms ease, -moz-transform 200ms ease, -o-transform 200ms ease;
   width: 16vw;
   height: 16vw;
@@ -50,10 +45,8 @@
     height: 100%;
     background-size: cover;
     -webkit-transition: -webkit-filter 300ms;
-    transition: -webkit-filter 300ms;
     -o-transition: filter 300ms;
     -moz-transition: filter 300ms;
-    transition: filter 300ms;
     transition: filter 300ms, -webkit-filter 300ms;
     -webkit-filter: grayscale(80%);
     filter: grayscale(80%);

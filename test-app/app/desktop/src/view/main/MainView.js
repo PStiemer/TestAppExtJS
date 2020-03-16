@@ -1,5 +1,6 @@
 Ext.define('TestApp.view.main.MainView', {
   extend: 'Ext.tab.Panel',
+  // Defines an xtype name for the class
   xtype: 'mainview',
   controller: 'mainviewcontroller',
   viewModel: {
@@ -12,16 +13,25 @@ Ext.define('TestApp.view.main.MainView', {
     'TestApp.view.TunesView'
   ],
 
+  // Lets the tab bar appear on the bottom of the view
   tabBarPosition: 'bottom',
 
+  // The array of the navigation tabs
   items: [{
     title: "Thumbnails",
+    // xtype of our TunesView class
     xtype: 'tunesview',
     bind: {
+      // Store taken from MainViewModel.js
       store: '{tunes}'
     }
   }, {
     title: "Grid",
-    html: '<h1>tunes grid</h1>'
+    // xtype of our TunesGrid class
+    xtype: 'tunesgrid',
+    bind: {
+      // Store taken from MainViewModel.js
+      store: '{tunes}'
+    }
   }]
 });
