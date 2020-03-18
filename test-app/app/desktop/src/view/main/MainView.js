@@ -24,7 +24,11 @@ Ext.define('TestApp.view.main.MainView', {
     bind: {
       // Store taken from MainViewModel.js
       store: '{tunes}'
-    }
+    },
+    // Detects a click on a record
+    listeners: {
+      select: 'onThumbSelect'
+    },
   }, {
     title: "Grid",
     // xtype of our TunesGrid class
@@ -32,6 +36,10 @@ Ext.define('TestApp.view.main.MainView', {
     bind: {
       // Store taken from MainViewModel.js
       store: '{tunes}'
-    }
+    },
+    // Detects a click on a row
+    listeners: {
+      select: 'onGridSelect'
+    },
   }]
 });
